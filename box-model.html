@@ -3,16 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>css intro</title>
+    <title>css internal</title>
+    <style>
+        /* Hay que seleccionar el elemento en primer lugar */
+        /* Por lo cual necesitamos estudiar los selectores básicos, que son tres. */
+
+        /* Selector por el nombre del elemento, es decir, por el nombre de la etiqueta (tag) */
+
+        h1 {width: 70%; 
+            height: 150px; 
+            border: 5px solid red; 
+            background-color: blue; 
+            color: yellow;
+            text-align: center;}
+
+        /* Seleccionar por el atributo id del elemento */
+
+            #encabezado2 {padding: 40px; text-align: right;}
+
+        /* Seleccionar por el atributo de clase (class) del elemento, que permite seleccionar varios elementos 
+        que sean de la misma clase */
+
+        .info {color: purple;}
+
+            
+
+    </style>
 </head>
 <body>
-    <h1 style="width: 500px; 
-                height: 200px; 
-                border-width: 10px 30px;
-                border-color: aqua;
-                border-style: dashed;
-                padding: 20px;">
-        Introducción a las hojas de estilo en cascada (CSS) (Cascading Style Sheets)</h1>
-    <h1>Otro elemento HTML para comparar</h1>
+    <h1 id="encabezado1" class="info">
+        Introducción a las hojas de estilo en cascada (CSS) (Cascading Style Sheets)
+    </h1>
+    <h1 id="encabezado2">
+        Otro elemento HTML para comparar
+    </h1>
+
+    <h2>Selector de CSS por el atributo class</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat corporis asperiores, et dignissimos corrupti beatae provident maiores nemo facere? Deserunt reiciendis ex inventore ipsum minima tenetur ratione iste fugit placeat.</p>
+
+    <p id="parrafo1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui laboriosam a est ab adipisci obcaecati, sint cupiditate. Soluta doloremque facere itaque vero quibusdam est non. Architecto, praesentium. Possimus, unde consequatur.</p>
+    <p id="parrafo2">Veritatis minus impedit maxime voluptatibus unde veniam corrupti velit, cupiditate illo nemo porro molestias corporis explicabo aspernatur qui voluptas? Sunt natus fugit eligendi facilis tenetur, impedit ab ullam molestiae quos?</p>
+
+    <p class="info" id="par1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nemo quia itaque, obcaecati id quos ex a quod distinctio veritatis sint voluptates expedita voluptas eveniet nam et laboriosam temporibus! Esse.</p>
+    <p class="info" id="par2">Quisquam alias porro dolorum unde voluptatum modi pariatur accusamus ut laboriosam, natus commodi magnam atque facilis perferendis dicta at soluta. Ratione totam deserunt voluptas neque maiores doloribus reiciendis aliquam est?</p>
+    <p class="info" id="par3">Magni corrupti pariatur illo neque eveniet nobis molestias, repellendus id, similique porro, atque ex quod at voluptates eum quisquam non laudantium? Sequi nam modi rerum exercitationem laborum possimus laboriosam unde!</p>
 </body>
 </html>
